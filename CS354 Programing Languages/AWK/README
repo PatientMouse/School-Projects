@@ -1,0 +1,24 @@
+# la5 AWK
+
+* Author(s): Andrew Gerber
+* Class: CS354
+* Semester: spring 2022
+
+## Overview
+
+ In this assignment, we were tasked with creating a awk script that turns csv to html table for viewing. I decided to put the values in a table based off of given skeleten html. To find all the single family holms I checked collum 3 for non case sensitive "single"
+
+## Trouble
+I had a hard time getting the quote values to be sub stringed out
+
+## Compiling and Using
+To Compile
+chmod +x [filename]
+
+To Run:
+./toFile.awk [FileName] or ./toStdout.awk [filename]
+
+
+## Testing
+
+I looked at the table

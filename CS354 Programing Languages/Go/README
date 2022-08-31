@@ -1,0 +1,34 @@
+# la3 Go
+
+* Author(s): Andrew Gerber
+* Class: CS354
+* Semester: spring 2022
+
+## Overview
+
+ In this assignment, we were tasked with translating a simple bank program in java to Golang
+
+## Trouble
+this was a pretty straight forward assignment side the accrue and main functionality. *I 'cannot seem to get the main file to reconise bank methods.
+
+*Edit: I finished the assingment and got the accrue and tostring to compile and run, tostring prints nothing.
+
+## Compiling and Using
+To Compile and run
+
+gccgo -g -c customer.go
+gccgo -g -c account.go checking.go saving.go
+gccgo -g -c bank.go
+gccgo -g -c main.go
+gccgo -g -o main *.o
+ 
+
+## Testing
+
+To test this project I added more lines in the data file and checked the outputran the main file and added customers and banks
+
+## Extra Credit
+
+No extra credit in this project.
+
+## Notes:

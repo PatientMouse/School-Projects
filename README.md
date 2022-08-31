@@ -4,6 +4,10 @@
 
 Repository to hold coding projects in school
 
+Projects are in class folder with the following languages:
+
+**CS401:** HTML & CSS
+
 
 # Captsone Project:
 I thought it would be most appropite to include like to github repo so any can see commit history:
