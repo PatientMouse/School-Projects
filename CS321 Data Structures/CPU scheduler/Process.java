@@ -1,4 +1,4 @@
-/* this is a base o=bject java for lab2 of cs321
+/* this is a base object java for lab2 of cs321
 * Author andrew gerber
 * date sep 21 2020
 * desc: object of a process used as founation of cpuscheduling, each process has variables that identify its imporatnce

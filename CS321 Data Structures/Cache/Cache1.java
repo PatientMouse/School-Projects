@@ -16,14 +16,6 @@ public class Cache1 {
 		cache = new LinkedList<Object>();
 		sizeLimit = limit;
 		index=0;
-		
-		//not needed
-		//size =0;
-		
-		//moved to test
-		//ref =0;
-		//hits=0;
-		//misses=0;
 	}
 	
 	public int getRefrences() {
