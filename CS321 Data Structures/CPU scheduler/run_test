@@ -1,0 +1,14 @@
+#!/bin/sh
+
+rm -f CPUScheduling_output
+rm -f Test_output
+
+
+java CPUScheduling 5 4 3 200 $1 > CPUScheduling_output
+
+
+java Test 5 4 3 200 CPUScheduling_output > Test_output
+
+diff CPUScheduling_output Test_output
+
+
