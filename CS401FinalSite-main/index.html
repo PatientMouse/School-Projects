@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Aries Random Song</title>
+<link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster:regular|Pacifico:regular|Comfortaa:300,regular,500,600,700|Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+</head>
+
+
+
+
+
+
+<body>
+<h1 class="title">'Aries' Random Songerator</h1>
+
+
+<div class="wrapper">
+<div class="buttons">
+  <button class="button disabled" onclick="document.location='index.html'">
+    Songerator
+  </button>
+  <button class="button" onclick="document.location='disography.html'">
+    Artist Discography
+  </button>
+  <button class="button" onclick="document.location='about-art.html'">
+    About the Artist
+  </button>
+  <button class="button" onclick="document.location='about-site.html'">
+    About the Site
+  </button>
+</div>
+</div>
+
+<div class="wrapper">
+  <h2 id="Song"></h2>
+  <h3 id="Album"></h3>
+<img class ="img" id="cover" src="img/graytangle.png" alt="placeholder" >
+<div id="generator">
+  <button class="randoButton" onclick=getSong(1,22)>
+    Randomize Song!
+  </button>
+</div>
+  </div>
+
+</body>
+
+<div style="position: absolute; bottom: 10px;">
+  Andrew Gerber. BSU CS401. Fall 2021.
+</div>
+
+</html>
+
+<script id="randomSong">
+  var randomNum;
+  var currentIMG = document.getElementById("cover").src;
+  var text;
+  var song;
+  var album;
+  function getSong() {
+    randomNum= Math.floor((Math.random() * 25) + 1);;
+
+    switch (randomNum){
+      case 1:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "BOUNTY HUNTER";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 2:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "FOOL'S GOLD";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 3:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "RIDING";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 4:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "ETA";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 5:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "ONE PUNCH";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 6:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "EASY";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 7:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "KIDS ON MOLLY";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 8:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "HOW RUDE";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 9:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "DITTO";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 10:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "DESPERADO";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 11:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "OUTDATED";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 12:
+        currentIMG = "img/inme.jpg";
+        text = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        song = "WHEN THE LIGHTS GO OUT";
+        album = "BELIEVE IN ME, WHO BELIEVES IN YOU";
+        break;
+      case 13:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "BAD NEWS";
+        album = "WELCOME HOME";
+        break;
+      case 14:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "SAYONARA";
+        album = "WELCOME HOME";
+        break;
+      case 15:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "DEITY";
+        album = "WELCOME HOME";
+        break;
+      case 16:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "AMY'S GRAVE";
+        album = "WELCOME HOME";
+        break;
+      case 17:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "RACECAR";
+        album = "WELCOME HOME";
+        break;
+      case 18:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "PONY";
+        album = "WELCOME HOME";
+        break;
+      case 19:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "CAROUSEL";
+        album = "WELCOME HOME";
+        break;
+      case 20:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "SANTA MONICA";
+        album = "WELCOME HOME";
+        break;
+      case 21:
+        currentIMG = "img/home.png";
+        text = "WELCOME HOME";
+        song = "HOME";
+        album = "WELCOME HOME";
+        break;
+      case 22:
+        currentIMG = "img/blos.jpg";
+        text = "BLOSSOM";
+        song = "BLOSSOM";
+        album = "BLOSSOM";
+        break;
+      case 23:
+        currentIMG = "img/gen.jpg";
+        text = "GENIE";
+        song = "GENIE";
+        album = "GENIE";
+        break;
+      case 24:
+        currentIMG = "img/ded.jpg";
+        text = "DEADMAN WUNDERLAND";
+        song = "DEADMAN WUNDERLAND";
+        album = "DEADMAN WUNDERLAND";
+        break;
+      case 25:
+        currentIMG = "img/ur-not.jpg";
+        text = "UR NOT PRECIOUS";
+        song = "UR NOT PRECIOUS";
+        album = "UR NOT PRECIOUS";
+        break;
+
+    }
+
+
+    document.getElementById("cover").src = currentIMG;
+    document.getElementById("cover").alt = text;
+    document.getElementById("Song").innerHTML = song;
+    document.getElementById("Album").innerHTML = album;
+
+    console.log(randomNum);
+    console.log(currentIMG);
+    console.log(text);
+    console.log(song);
+    console.log(album);
+  }
+
+
+</script>
