@@ -45,15 +45,6 @@ static Rep rep(Deq q)
 static void put(Rep r, End e, Data d)
 {
 
-  // if(!r)
-  // printf("Rep cannot be null");
-  // return;
-  // if(!e)
-  // printf("End cannot be null");
-  // return;
-  // if(!d)
-  // printf("Data cannot be null");
-  // return;
 
   Node newPutNode = (Node)malloc(sizeof(*newPutNode)); //Create new node to put into Rep
   newPutNode->data = d;                                //set data of newnode as args d
@@ -100,16 +91,6 @@ static Data ith(Rep r, End e, int i)
     return 0;   //return 0 on error
   }
 
-  // if(!r)
-  // printf("Rep cannot be null");
-  // return (Data) 1;
-  // if(!e)
-  // printf("End cannot be null");
-  // return (Data) 1;
-  // if(!i)
-  // printf("Data cannot be null");
-  // return (Data) 1;
-
   Node tmpNode = r->ht[e];    //set up new node as either head or tail node
   End dir = Ends;             //declare a variable dir;
   if (e == Head)
@@ -148,17 +129,7 @@ static Data get(Rep r, End e)   //returns the removed node from head or tail of 
   }
 
   Data tmp = 0;     //set return tmp data to 0;
-
-
-  // Node tmpNode = r->ht[e];    // did not use pointer
-  //Node delNode = (Node)malloc(sizeof( *delNode));
-
-
   Node delNode;     //create node to set as removed node
-  // delNode->data = 0;
-  // delNode->np[Head] = 0;
-  // delNode->np[Tail] = 0;
-
   if (r->len == 1)      //if check to see if there is only one node
   {
 
@@ -217,16 +188,6 @@ static Data rem(Rep r, End e, Data d)
     WARN("Length is 0 - Error no data");
     return 0;
   }
-  // if(!r)
-  // printf("Rep cannot be null");
-  // return (Data) 1;
-  // if(!e)
-  // printf("End cannot be null");
-  // return (Data) 1;
-  // if(!d)
-  // printf("Data cannot be null");
-  // return (Data) 1;
-
   Data tmp = 0;   //set return tmp value
   End dir;      //set direction
   if (e == Head)
